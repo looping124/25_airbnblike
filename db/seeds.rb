@@ -20,3 +20,10 @@ City.create(name:"Paris",zip_code:"75000")
 Lodgment.create(beds_nb:6,price:200,description:"super logement",has_wifi:true,welcom_message:"bienvenue les amis",city:city1)
 Reservation.create(start_date:DateTime.current.to_date, duration:2,guest:user1,rented_lodgment:lodgment1)
 
+cities_array = [["Nice","06000"], ["Marseille","13000"], ["Paris","75000"], ["Lyon","69000"], ["Toulouse","20000"], ["Strasbourg","60000"], ["Menton","06500"], ["Cannes", "06800"], ["Toulon","83000"], ["Bordeaux","25000"]]
+
+cities_array.each do |index|
+
+  # City.create(name:cities_array[index][0],zip_code:cities_array[index][1])
+
+end
